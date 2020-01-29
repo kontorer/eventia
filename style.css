@@ -725,9 +725,13 @@ footer .social .social-icon{
 	margin: 80px auto 0;
 	border: 1px solid white;
 	padding:10px;
+	position: relative;
+	transition: .4s cubic-bezier(0.42, 0, 0.58, 1);
+	transition-delay: .9s;
 }
 
 .big-button-outline {
+	transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1);
 	width: 370px;
 	height: 75px;
 	border: 1px solid white;
@@ -748,12 +752,21 @@ footer .social .social-icon{
 	font-size: 12px;
 }
 
-/*.big-button-outline:hover{
-	transition: .5s ease-in-out;
-	top:-65px;
-	left:-11px;
+.big-button-outline:hover{
+	top:-66px;
+	left:-12px;
 }
-*/
+.parntership .big-button-outline:hover{
+	top:-52px;
+}
+.big-button:hover{
+	transition: .4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+	transition-delay: .9s;
+	background: linear-gradient(to left, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.3) 100%);
+}
+
+
+
 /*adaptive options*/
 
 @media only screen and (max-width: 855px){

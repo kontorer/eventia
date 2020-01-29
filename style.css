@@ -41,6 +41,7 @@ button{
 	background:none;
 	border:none;
 	padding:0;
+	cursor: pointer;
 }
 
 
@@ -344,6 +345,10 @@ h1 {
 	margin: 15px 0;
 	margin-left: 15px;
 	font-family: 'Open Sans', sans-serif;
+    transition: all .15s linear;
+}
+.speaker-card:hover{
+	transform: scale(1.05, 1.05);
 }
 
 
@@ -435,6 +440,7 @@ p.speaker-info {
 	background-color: white;
 	filter: drop-shadow(1px 1px  rgba(0,0,0,0.7)) 
 	drop-shadow(-1px 1px  rgba(0,0,0,0.7));
+	cursor: pointer;
 }
 div.day-button + div.day-button {
 	margin-left: 25px;
@@ -669,6 +675,15 @@ footer .social .social-icon{
 	padding:18px 0;
 }
 
+.about, .posts, .text-n-butn {
+	padding-bottom: 30px;
+}
+
+
+.agenda-inner:not(.agenda-day-active) {
+	display:none;
+}
+
 
 
 
@@ -682,6 +697,8 @@ footer .social .social-icon{
 	color:white;
 }
 
+
+/*buttons*/
 
 .blank-button{
 	height: 1.5em;
@@ -731,12 +748,13 @@ footer .social .social-icon{
 	font-size: 12px;
 }
 
-
-
-.about, .posts, .text-n-butn {
-	padding-bottom: 30px;
+/*.big-button-outline:hover{
+	transition: .5s ease-in-out;
+	top:-65px;
+	left:-11px;
 }
-
+*/
+/*adaptive options*/
 
 @media only screen and (max-width: 855px){
 	.container {
@@ -889,4 +907,3 @@ footer .social .social-icon{
 	width: 0%;
 	left: 50%;
 }
-

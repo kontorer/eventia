@@ -48,3 +48,29 @@ initializeClock('counter', deadline);
 
 
 
+
+
+// <div class="day-button day-button-1 style-grad">
+// <div class="agenda-inner agenda-day-1 agenda-day-active">
+// element.classList.add("mystyle");
+
+var dayButton1 = document.querySelector('.day-button-1');
+var dayButton2 = document.querySelector('.day-button-2');
+var dayButton3 = document.querySelector('.day-button-3');
+var agendaBlocks = document.querySelectorAll('.agenda-inner');
+var dayButtons = document.querySelectorAll('.day-button');
+
+function showAgenda() {
+  dayButtons.forEach(buttn => {
+    buttn.classList.remove("style-grad");
+  });
+  agendaBlocks.forEach(block => {
+    block.classList.remove("agenda-day-active");
+  });
+  this.classList.add("style-grad");
+  agendaBlocks[this.id-1].classList.add("agenda-day-active");
+}
+
+dayButton1.addEventListener('click', showAgenda);
+dayButton2.addEventListener('click', showAgenda);
+dayButton3.addEventListener('click', showAgenda);

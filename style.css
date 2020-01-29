@@ -803,6 +803,11 @@ footer .social .social-icon{
 	.big-button-outline {
 		display:none;
 	}
+	.agenda-inner:not(.agenda-day-active) {
+		display:none;
+	}
+
+
 }
 
 

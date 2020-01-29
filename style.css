@@ -738,7 +738,7 @@ footer .social .social-icon{
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 855px){
 	.container {
 		width:100%;
 	}
@@ -761,12 +761,12 @@ footer .social .social-icon{
 		width: 100%;
 	}
 	.post, .article{
-		width: 100%;
+		width: 90%;
 		padding: 15px 0;
 	}
 	.header > *, .head-info > * {
 		margin: 10px auto;
-		width: 90%;
+		width: 80%;
 	}
 	.head-info {
 		height: 200%;
